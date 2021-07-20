@@ -1,0 +1,77 @@
+@media screen and(max-width: 479px) {
+  .joinForm {
+    width: 220px;
+    padding: 10px;
+  }
+  .joinLabel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .joinInput {
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: 200px;
+  }
+  .joinTitle {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+  }
+}
+@media screen and(max-width: 229px) {
+  .joinTitle {
+    font-size: 15px;
+    max-width: 150px;
+  }
+  .joinInput {
+    max-width: 150px;
+  }
+  .joinForm {
+    width: 90%;
+  }
+}
+@media screen and(max-width: 640px) {
+  body .chatBox {
+    width: 270px;
+    border: none;
+    padding: 10px;
+    flex-direction: column;
+  }
+  body .chatForm {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  body .chatInput {
+    margin-bottom: 15px;
+    width: 250px;
+  }
+  body .chatExitBtn {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and(max-width: 270px) {
+  body .chatBox {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    flex-direction: column;
+  }
+  body .chatForm {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  body .chatInput {
+    margin-bottom: 15px;
+    width: 130px;
+  }
+  body .chatMessagebox {
+    width: 130px;
+  }
+  body .onlineUsersBlock {
+    width: 130px;
+  }
+}

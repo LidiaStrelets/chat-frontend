@@ -1,0 +1,190 @@
+.chatForm {
+  border: 2px solid rgb(18, 18, 90);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.messagesBox {
+  border: 2px solid rgb(18, 18, 90);
+  border-radius: 3px;
+  width: 380px;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 300px;
+}
+.onlineUsersBox {
+  overflow-y: scroll;
+  border: 2px solid rgb(18, 18, 90);
+  border-radius: 3px;
+  width: 180px;
+  height: 300px;
+  padding: 10px;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 2px solid rgb(18, 18, 90);
+  border-radius: 3px;
+  padding: 20px;
+
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+.chatTitle {
+  margin-top: 0;
+  text-align: center;
+}
+.chatSubtitle {
+  margin-top: 0;
+  font-size: 15px;
+}
+.sendBtn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(18, 18, 90);
+  color: aliceblue;
+}
+.exitBtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(18, 18, 90);
+  color: aliceblue;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.chatInput {
+  margin-left: 20px;
+  padding: 10px 15px;
+}
+.chatList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chatUsersList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chatUser,
+.chatAuthor,
+.chatMsg {
+  margin: 0;
+}
+.chatAuthor {
+  font-size: 10px;
+  &:hover {
+    font-size: 15px;
+  }
+}
+.chatUserItem {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.chatMsgItem {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  border-radius: 25px;
+  width: 200px;
+  color: aliceblue;
+  padding: 10px 20px;
+}
+.chatMsgItemInner {
+  background-color: rgb(185, 121, 0);
+  border-bottom-right-radius: 0;
+}
+.chatMsgItemOuter {
+  //   @extend .chtMsgItemInner;
+  background-color: rgb(18, 18, 90);
+  border-bottom-left-radius: 0;
+  text-align: right;
+  margin-left: auto;
+}
+// body {
+//   color: rgb(90, 90, 90);
+// }
+.chatMute {
+  color: rgb(129, 124, 124);
+  margin-right: 10px;
+}
+.chatBun {
+  color: red;
+}
+@media screen and(max-width: 640px) {
+  .chatForm {
+    width: 300px;
+  }
+  .chatLabel {
+    display: flex;
+    flex-direction: column;
+  }
+  .chatInput {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 280px;
+  }
+  .innerContainer {
+    flex-direction: column-reverse;
+  }
+  .onlineUsersBox {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .messagesBox {
+    width: 300px;
+  }
+  .box {
+    padding: 10px;
+    width: 320px;
+    margin-top: 30px;
+  }
+}
+@media screen and(max-width: 340px) {
+  body .chatInput {
+    width: 130px;
+    padding: 2px;
+  }
+  .chatForm {
+    width: 150px;
+  }
+  .sendBtn {
+    padding: 5px;
+    width: 70px;
+  }
+  .onlineUsersBox {
+    width: 150px;
+  }
+  .messagesBox {
+    width: 150px;
+  }
+  .exitBtn {
+    padding: 5px;
+    width: 70px;
+  }
+  .box {
+    width: 165px;
+    padding: 5px;
+  }
+  .chatMsgItem {
+    width: 130px;
+  }
+}

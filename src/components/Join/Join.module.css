@@ -1,0 +1,49 @@
+.form {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid rgb(2, 2, 77);
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  margin-top: 50px;
+  text-align: center;
+  /* width: 420px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.input {
+  padding: 5px;
+  margin-left: 15px;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label:not(:last-child) {
+  margin-bottom: 10px;
+}
+.btn {
+  width: 100px;
+  padding: 10px;
+
+  border-radius: 5px;
+  background-color: rgb(2, 2, 77);
+  transition: all, 2500ms, linear;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: rgb(86, 86, 192);
+}
+/* from 480px desctop view */
+/* from 220px mobile version */
+/* dont depend on device width */
